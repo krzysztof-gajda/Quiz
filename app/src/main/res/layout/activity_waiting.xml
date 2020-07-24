@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp"
+    tools:context=".WaitingActivity">
+
+    <TextView
+        android:id="@+id/text_waiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Oczekiwanie na użytkownika"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/text_waiting_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/text_waiting"
+        android:layout_marginTop="50dp"
+        android:text="05:00"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+
+</RelativeLayout>

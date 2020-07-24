@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp"
+    tools:context=".NewQuestionActivity">
+
+    <TextView
+        android:id="@+id/text_create_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Tworzenie Pytania"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edit_text_question_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/text_create_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:singleLine="false"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/linear_questions"
+        android:layout_width="387dp"
+        android:layout_height="482dp"
+        android:layout_above="@+id/button_add_question"
+        android:layout_below="@+id/edit_text_question_name"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/customborder"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_question_1"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edit_text_question_2"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edit_text_question_3"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edit_text_question_4"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_rg"
+        android:orientation="vertical"
+        android:layout_width="30dp"
+        android:layout_height="482dp"
+        android:layout_below="@+id/edit_text_question_name"
+        android:layout_marginLeft="337dp"
+        >
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/is_correct_question_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/is_correct_question_2"
+                android:layout_marginTop="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/is_correct_question_3"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/is_correct_question_4"
+                android:layout_marginTop="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_add_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Dodaj pytanie" />
+
+</RelativeLayout>
